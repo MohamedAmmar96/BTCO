@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "black";
+    src: url("../webfonts/Cairo/Cairo-Black.ttf")
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("../webfonts/Cairo/Cairo-Bold.ttf")
+}
+
+@font-face {
+    font-family: "extra-light";
+    src: url("../webfonts/Cairo/Cairo-ExtraLight.ttf")
+}
+
+@font-face {
+    font-family: "light";
+    src: url("../webfonts/Cairo/Cairo-Light.ttf")
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("../webfonts/Cairo/Cairo-Regular.ttf")
+}
+
+@font-face {
+    font-family: "semi-bold";
+    src: url("../webfonts/Cairo/Cairo-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "ta-black";
+    src: url("../webfonts/Tajawal/Tajawal-Black.ttf")
+}
+
+@font-face {
+    font-family: "ta-bold";
+    src: url("../webfonts/Tajawal/Tajawal-Bold.ttf")
+}
+
+@font-face {
+    font-family: "ta-extra-bold";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "ta-extra-light";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraLight.ttf")
+}
+
+@font-face {
+    font-family: "ta-light";
+    src: url("../webfonts/Tajawal/Tajawal-Light.ttf")
+}
+
+@font-face {
+    font-family: "ta-medium";
+    src: url("../webfonts/Tajawal/Tajawal-Medium.ttf")
+}
+
+@font-face {
+    font-family: "ta-regular";
+    src: url("../webfonts/Tajawal/Tajawal-Regular.ttf")
+}
