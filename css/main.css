@@ -1493,6 +1493,8 @@
     .info-list-li .info-link {
         color: #939393;
         text-decoration: none;
+        font-size: 14px;
+        font-family: "regular";
         transition: all 0.4s ease-in-out;
     }
     

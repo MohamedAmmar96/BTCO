@@ -150,7 +150,7 @@
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;
                 }
-                .mo-nav .lang-link {
+                .mo-nav .lang-link:hover {
                     color: #216b34;
                 }
                 .nav-list {
@@ -701,7 +701,7 @@
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;
                 }
-                .mo-nav .lang-link {
+                .mo-nav .lang-link:hover {
                     color: #216b34;
                 }
                 .nav-list {
