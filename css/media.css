@@ -1047,6 +1047,14 @@
                 html[dir=rtl] .more-deals .deals-time {
                     font-size: 13px;
                 }
+                .photography .mo-tabs {
+                    /* display: none; */
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+                .mo-tabs-li {
+                    width: 33.33%;
+                }
                 .photography {
                     padding: 50px 0 40px 0;
                 }
