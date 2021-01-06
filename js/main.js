@@ -251,6 +251,10 @@ $(document).ready(function() {
             $(".config-list").slideToggle(300);
         });
     }
+    $(".sub-box .nav-link").click(function() {
+        $(this).toggleClass("rotate")
+        $(this).siblings(".mega-menu").slideToggle(300);
+    });
     // Footer Section Start --------------------------------------------------------------------------------------------------------------------
     // To Toggle Between Footer Slide Menus
     if ($(window).width() <= 991) {

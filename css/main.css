@@ -61,7 +61,7 @@
     }
     
     .contact-li:first-child {
-        margin-inline-end: 45px;
+        margin-inline-end: 30px;
     }
     
     .contact-li .contact-link {
@@ -101,7 +101,7 @@
     .header-lang {
         display: flex;
         flex-direction: row;
-        margin-inline-end: 55px;
+        margin-inline-start: 30px;
     }
     
     .flag {
@@ -128,7 +128,7 @@
     }
     
     .header-info-li {
-        margin-inline-end: 55px;
+        margin-inline-end: 30px;
     }
     
     .header-info-li:last-child {
@@ -238,12 +238,17 @@
     html[dir=rtl] .search-input {
         padding-left: 0;
         padding-right: 25px;
+        font-size: 16px;
     }
     
     .search-input::placeholder {
         font-size: 18px;
         font-family: "regular";
         color: #b7b6b6;
+    }
+    
+    html[dir=rtl] .search-input::placeholder {
+        font-size: 16px;
     }
     
     .search-input:focus {
@@ -308,12 +313,18 @@
         align-items: center;
         cursor: pointer;
         color: #666;
+        padding: 10px 0;
         transition: all 0.4s ease-in-out;
     }
     
     .config .config-icon,
     .shop .shop-icon {
         font-size: 27px;
+    }
+    
+    html[dir=rtl] .config .config-icon,
+    html[dir=rtl] .shop .shop-icon {
+        font-size: 22px;
     }
     
     .config .config-name,
@@ -325,6 +336,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    
+    html[dir=rtl] .config .config-name,
+    html[dir=rtl] .shop .shop-name {
+        font-size: 16px;
     }
     
     .config:hover,
@@ -347,49 +363,144 @@
         margin-top: 6px;
     }
     
-    .config-list {
+    .config-box {
         position: absolute;
-        top: 35px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 130px;
+        top: 50px;
+        left: 0;
+        width: 300px;
         background-color: #fff;
         box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
         transition: all 0.4s ease-in-out;
+        z-index: 99999;
         visibility: hidden;
         opacity: 0;
     }
     
-    .config-li {
-        padding: 7px 0;
+    .form {
+        padding: 25px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .account-p {
+        color: #545759;
+        font-size: 16px;
+        font-family: "regular";
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .form .log-in,
+    .form .create-account {
         position: relative;
-    }
-    
-    .config-li:first-child::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #ededed;
-        width: 80%;
-        height: 1px;
-    }
-    
-    .config-li .config-link {
-        color: #666;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
         text-decoration: none;
         font-size: 14px;
         font-family: "bold";
         transition: all 0.4s ease-in-out;
+        z-index: 1;
+        overflow: hidden;
     }
     
-    .config-li .config-link:hover {
+    .form .log-in {
+        background-color: #3e5c9a;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    .form .create-account {
+        background-color: #3e5c9a;
+        border: 1px solid #b7b7b7;
+        color: #666;
+    }
+    
+    .form .create-account:hover {
+        color: #fff;
+    }
+    
+    .form .log-in::after,
+    .form .create-account::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(2);
+        border-radius: 0;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .form .log-in::after {
+        background-color: #216b34;
+    }
+    
+    .form .create-account::after {
+        background-color: #fff;
+    }
+    
+    .form .log-in:hover::after,
+    .form .create-account:hover::after {
+        transform: scale(0);
+    }
+    
+    .account-tools {
+        padding: 20px 30px;
+        background-color: #e1e1e1;
+    }
+    
+    .account-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .account-li .account-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .account-li .account-link:hover .account-icon,
+    .account-li .account-link:hover .account-name {
         color: #216b34;
     }
     
-    .config:hover .config-list {
+    .account-link .account-icon {
+        color: #181818;
+        font-size: 22px;
+        margin-bottom: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .account-link .account-name {
+        font-size: 14px;
+        font-family: "regular";
+        color: #666;
+        margin-bottom: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .config:hover .config-box {
         visibility: visible;
         opacity: 1;
     }
@@ -402,6 +513,7 @@
     .close,
     .mo-nav .lang,
     .nav-li:nth-child(1),
+    .nav-li:nth-child(2),
     .mo-nav .contact-list {
         display: none;
     }
@@ -417,6 +529,7 @@
     .nav-li {
         padding: 10px 0;
         margin-inline-end: 47px;
+        position: relative;
     }
     
     .nav-li:last-child {
@@ -436,6 +549,10 @@
         transition: all 0.4s ease-in-out;
     }
     
+    html[dir=rtl] .nav-li .nav-link {
+        font-size: 16px;
+    }
+    
     .nav-li .nav-link:hover {
         color: #e49524;
     }
@@ -446,6 +563,129 @@
     
     .nav-name {
         margin-bottom: 0;
+    }
+    
+    .nav-li:hover .mega-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .mega-menu {
+        position: absolute;
+        top: 100%;
+        left: -115px;
+        width: 1200px;
+        z-index: 99999;
+        background-color: #fff;
+        box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    html[dir=rtl] .mega-menu {
+        left: auto;
+        right: -115px;
+    }
+    
+    .mega-menu::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 155px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+    }
+    
+    html[dir=rtl] .mega-menu::before {
+        left: auto;
+        right: 130px;
+    }
+    
+    .mega-list {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+    
+    .mega-list .mega-li {
+        width: 20%;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .mega-list .mega-li:hover {
+        box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
+    }
+    
+    .mega-li .mega-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-decoration: none;
+        color: #3a3d41;
+        font-size: 13px;
+        font-family: "regular";
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .mega-li .mega-link:hover {
+        color: #216b34;
+    }
+    
+    .mega-img-box {
+        height: 90px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 7px;
+        overflow: hidden;
+    }
+    
+    .mega-img {
+        max-width: 100%;
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .mega-link:hover .mega-img {
+        transform: scale(1);
+    }
+    
+    .mega-name {
+        margin-bottom: 0;
+    }
+    
+    .mega-banner {
+        width: 30%;
+        padding: 25px;
+        background-color: #f0f0f0;
+    }
+    
+    .mega-banner-box {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .mega-banner-img {
+        width: 100%;
+        max-width: 100%;
+        transform: scale(1.04);
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .mega-banner-box:hover .mega-banner-img {
+        transform: scale(1);
     }
     /***************************** Main Slider Section Start **********************/
     
@@ -600,10 +840,11 @@
         margin-inline-end: 30px;
         padding: 20px 10px;
         transition: all 0.4s ease-in-out;
+        z-index: 1;
     }
     
     .cat:hover {
-        background: #f1f3f7;
+        box-shadow: 3px 3px 15px #00000012, -3px -3px 15px #00000012;
     }
     
     .cat:last-child,
@@ -641,6 +882,10 @@
         font-size: 18px;
         font-family: "regular";
         transition: all 0.4s ease-in-out;
+    }
+    
+    html[dir=rtl] .cat .cat-name {
+        font-size: 16px;
     }
     
     .cat:hover .cat-name {
@@ -831,18 +1076,38 @@
         transform: scale(1);
     }
     
+    html[dir=rtl] .more-deals .deal-name {
+        font-size: 15px;
+    }
+    
     .more-deals-box .price-box {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
     
+    html[dir=rtl] .more-deals-box .price-box {
+        margin-bottom: 10px;
+    }
+    
     .more-deals-box .last-price {
         margin-inline-start: 10px;
     }
     
+    html[di=rtl] .more-deals-box .first-price {
+        font-size: 22px;
+    }
+    
+    html[di=rtl] .more-deals-box .last-price {
+        font-size: 16px;
+    }
+    
     .more-deals-box .deals-time {
         margin-bottom: 10px;
+    }
+    
+    html[dir=rtl] .more-deals-box .deals-time {
+        margin-bottom: 15px;
     }
     
     .more-deals-box .add-to-cart {
@@ -860,6 +1125,10 @@
         font-family: "bold";
         overflow: hidden;
         z-index: 1;
+    }
+    
+    html[dir=rtl] .more-deals-box .add-to-cart {
+        font-size: 16px;
     }
     
     .more-deals-box .add-to-cart::after {
@@ -921,8 +1190,50 @@
         padding: 70px 0 55px 0;
     }
     
-    .photography .cats-box {
-        margin-bottom: 65px;
+    .photography .mo-tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 950px;
+        margin: 0 auto 65px;
+    }
+    
+    .mo-tabs-li {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mo-tabs-li .mo-tabs-link {
+        color: #3a3d41;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mo-tabs-link .cat {
+        width: 100%;
+    }
+    
+    .mo-tabs-link .cat-img-box {
+        height: 140px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .mo-tabs-link .cat-img-box .cat-img {
+        max-width: 100%;
     }
     
     .photography .deal {
@@ -1194,10 +1505,6 @@
         transition: all 0.4s ease-in-out;
     }
     
-    .social-li .social-link:hover {
-        transform: translateY(-7px);
-    }
-    
     .social-li:nth-child(1) .social-link {
         color: #3e5c9a;
     }
@@ -1278,7 +1585,7 @@
         font-size: 15px;
         font-family: "bold";
         margin-top: 10px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         text-transform: uppercase;
     }
     
@@ -1290,7 +1597,8 @@
     }
     
     html[dir=rtl] .feature-desc {
-        font-size: 12px;
+        min-height: 40px;
+        font-size: 14px;
     }
     
     .lang-title {
@@ -1300,6 +1608,10 @@
         text-transform: uppercase;
         margin-bottom: 10px;
         margin-top: 30px;
+    }
+    
+    html[dir=rtl] .lang-title {
+        margin-top: 0px;
     }
     
     .lang {
@@ -1614,7 +1926,7 @@
     
     .loading-overlay-box img {
         max-width: 100%;
-        animation: bigger 2.5s ease-in-out infinite;
+        /* animation: bigger 2.5s ease-in-out infinite; */
         /* animation: to-center 1.5s linear infinite; */
     }
     
@@ -1629,17 +1941,16 @@
             transform: scale(0.6);
         }
     }
-    /* @keyframes to-center {
-        0% {
-            transform: translateX(450%);
-        }
-        50% {
-            transform: scale(1.5);
-        }
-        100% {
-            transform: translateX(-450%);
-        }
-    } */
+    
+    .progress-load {
+        background-color: #f00;
+        width: 100%;
+    }
+    
+    .progress-load-bar {
+        width: 100%;
+        background-color: #ccc;
+    }
     
     .lds-ellipsis {
         display: inline-block;

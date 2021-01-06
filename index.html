@@ -41,12 +41,6 @@
                         </li>
                     </ul>
                     <div class="lang-info">
-                        <div class="header-lang">
-                            <div class="flag">
-                                <img class="flag-img" src="images/header/flag-ar.png">
-                            </div>
-                            <a class="lang-link" href="index-ar.html">العربية</a>
-                        </div>
                         <ul class="header-info-list list-unstyled">
                             <li class="header-info-li">
                                 <a class="header-info-link" href="#!">
@@ -67,6 +61,12 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="header-lang">
+                            <div class="flag">
+                                <img class="flag-img" src="images/header/flag-ar.png">
+                            </div>
+                            <a class="lang-link" href="index-ar.html">العربية</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,10 +94,35 @@
                         <div class="config">
                             <i class="config-icon fa fa-user"></i>
                             <p class="config-name">My Account</p>
-                            <ul class="config-list list-unstyled">
-                                <li class="config-li"><a class="config-link" href="#!">Sign In</a></li>
-                                <li class="config-li"><a class="config-link" href="#!">Sign Up</a></li>
-                            </ul>
+                            <div class="config-box">
+                                <div class="form">
+                                    <p class="account-p">Log In to Your Account</p>
+                                    <a class="log-in config-link" href="#!">Log In</a>
+                                    <a class="create-account config-link" href="#!">Create Account</a>
+                                </div>
+                                <div class="account-tools">
+                                    <ul class="account-list list-unstyled">
+                                        <li class="account-li">
+                                            <a class="account-link" href="#!">
+                                                <i class="account-icon fa fa-user"></i>
+                                                <p class="account-name">Account</p>
+                                            </a>
+                                        </li>
+                                        <li class="account-li">
+                                            <a class="account-link" href="#!">
+                                                <i class="account-icon fa fa-shopping-cart"></i>
+                                                <p class="account-name">Orders</p>
+                                            </a>
+                                        </li>
+                                        <li class="account-li">
+                                            <a class="account-link" href="#!">
+                                                <i class="account-icon fa fa-heart"></i>
+                                                <p class="account-name">Wish List</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="shop">
                             <i class="shop-icon fa fa-shopping-cart"></i>
@@ -123,16 +148,67 @@
                 </ul>
             </div>
             <ul class="nav-list list-unstyled">
+                <li class="nav-li"><a class="nav-link" href="#!">Home</a></li>
                 <li class="nav-li">
                     <a class="nav-link" href="#!">
                         <p class="config-name">My Account</p>
                     </a>
                     <ul class="config-list list-unstyled">
                         <li class="config-li"><a class="config-link" href="#!">Sign In</a></li>
-                        <li class="config-li"><a class="config-link" href="#!">Sign Up</a></li>
+                        <li class="config-li"><a class="config-link" href="#!">Create New Account</a></li>
                     </ul>
                 </li>
-                <li class="nav-li"><a class="nav-link" href="#!">Photography</a></li>
+                <li class="nav-li sub-box"><a class="nav-link" href="#!">Photography</a>
+                    <div class="mega-menu">
+                        <ul class="mega-list list-unstyled">
+                            <li class="mega-li">
+                                <a class="mega-link" href="#!">
+                                    <div class="mega-img-box">
+                                        <img class="mega-img" src="images/megamenu/1.png">
+                                    </div>
+                                    <p class="mega-name">Digital Cameras</p>
+                                </a>
+                            </li>
+                            <li class="mega-li">
+                                <a class="mega-link" href="#!">
+                                    <div class="mega-img-box">
+                                        <img class="mega-img" src="images/megamenu/2.png">
+                                    </div>
+                                    <p class="mega-name">Lenses</p>
+                                </a>
+                            </li>
+                            <li class="mega-li">
+                                <a class="mega-link" href="#!">
+                                    <div class="mega-img-box">
+                                        <img class="mega-img" src="images/megamenu/3.png">
+                                    </div>
+                                    <p class="mega-name">Drones</p>
+                                </a>
+                            </li>
+                            <li class="mega-li">
+                                <a class="mega-link" href="#!">
+                                    <div class="mega-img-box">
+                                        <img class="mega-img" src="images/megamenu/4.png">
+                                    </div>
+                                    <p class="mega-name">Tripods</p>
+                                </a>
+                            </li>
+                            <li class="mega-li">
+                                <a class="mega-link" href="#!">
+                                    <div class="mega-img-box">
+                                        <img class="mega-img" src="images/megamenu/5.png">
+                                    </div>
+                                    <p class="mega-name">Accessories</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mega-banner">
+                            <div class="mega-banner-box">
+                                <img class="mega-banner-img" src="images/megamenu/banner.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-li"><a class="nav-link" href="#!">Provideos</a></li>
                 <li class="nav-li"><a class="nav-link" href="#!">Lighting</a></li>
                 <li class="nav-li"><a class="nav-link" href="#!">Pro audio</a></li>
@@ -188,7 +264,7 @@
     <!------------------------------------- Categories Start ------------------------------------>
     <div class="cats">
         <div class="container">
-            <h2 class="sections-title wow animate__zoomIn" data-wow-duration="0.3s"><span class="green">Mian </span>Categories</h2>
+            <h2 class="sections-title wow animate__zoomIn" data-wow-duration="0.3s"><span class="green">Main </span>Categories</h2>
             <div class="cats-box wow animate__zoomIn" data-wow-duration="0.3s">
                 <div class="cat">
                     <div class="cat-img-box">
@@ -685,164 +761,323 @@
     <div class="photography">
         <div class="container">
             <h2 class="sections-title wow animate__zoomIn" data-wow-duration="0.3s">Photography</h2>
-            <div class="cats-box wow animate__zoomIn" data-wow-duration="0.3s">
-                <div class="cat">
-                    <div class="cat-img-box">
-                        <a href="#!"><img class="cat-img" src="images/photography/1.png"></a>
-                    </div>
-                    <a class="cat-name" href="#!">Digital Cameras</a>
-                </div>
-                <div class="cat">
-                    <div class="cat-img-box">
-                        <a href="#!"><img class="cat-img" src="images/photography/2.png"></a>
-                    </div>
-                    <a class="cat-name" href="#!">Lenses</a>
-                </div>
-                <div class="cat">
-                    <div class="cat-img-box">
-                        <a href="#!"><img class="cat-img" src="images/photography/3.png"></a>
-                    </div>
-                    <a class="cat-name" href="#!">Drones</a>
-                </div>
-                <div class="cat">
-                    <div class="cat-img-box">
-                        <a href="#!"><img class="cat-img" src="images/photography/4.png"></a>
-                    </div>
-                    <a class="cat-name" href="#!">Tripods</a>
-                </div>
-            </div>
-            <div class="owl-carousel owl-theme wow animate__zoomIn" data-wow-duration="0.3s">
-                <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
-                    <div class="deal-img-box">
-                        <a href="#!"><img class="deal-img" src="images/photography-slider/1.png"></a>
-                    </div>
-                    <div class="deal-content">
-                        <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
-                        <ul class="stars-list list-unstyled">
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                        </ul>
-                        <div class="price-progress">
-                            <div class="price-box">
-                                <span class="first-price">500 RS</span>
-                                <span class="last-price">700 RS</span>
+            <ul class="mo-tabs list-unstyled wow animate__zoomIn" data-wow-duration="0.3s" role="tablist">
+                <li role="presentation" class="mo-tabs-li active">
+                    <a class="mo-tabs-link" href="#best-tab-one" aria-controls="home" role="tab" data-toggle="tab">
+                        <div class="cat">
+                            <div class="cat-img-box">
+                                <img class="cat-img" src="images/photography/camera.jpg">
                             </div>
-                            <div class="progress-box">
-                                <div class="my-progress">
-                                    <span class="my-progress-bar"></span>
+                            <p class="cat-name">Digital Cameras</p>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" class="mo-tabs-li">
+                    <a class="mo-tabs-link" href="#best-tab-two" aria-controls="messages" role="tab" data-toggle="tab">
+                        <div class="cat">
+                            <div class="cat-img-box">
+                                <img class="cat-img" src="images/photography/lens.jpg">
+                            </div>
+                            <p class="cat-name">Lenses</p>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" class="mo-tabs-li">
+                    <a class="mo-tabs-link" href="#best-tab-one" aria-controls="messages" role="tab" data-toggle="tab">
+                        <div class="cat">
+                            <div class="cat-img-box">
+                                <img class="cat-img" src="images/photography/3.png">
+                            </div>
+                            <p class="cat-name">Drones</p>
+                        </div>
+                    </a>
+                </li>
+                <li role="presentation" class="mo-tabs-li">
+                    <a class="mo-tabs-link" href="#best-tab-two" aria-controls="messages" role="tab" data-toggle="tab">
+                        <div class="cat">
+                            <div class="cat-img-box">
+                                <img class="cat-img" src="images/photography/stand.jpg">
+                            </div>
+                            <p class="cat-name">Tripods</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="best-tab-one" role="tabpanel" class="tab-pane active">
+                    <div class="owl-carousel owl-theme wow animate__zoomIn" data-wow-duration="0.3s">
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/1.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
                                 </div>
-                                <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                            </div>
+                        </div>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/2.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/3.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/4.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deal">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography/1.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
-                    <div class="deal-img-box">
-                        <a href="#!"><img class="deal-img" src="images/photography-slider/2.png"></a>
-                    </div>
-                    <div class="deal-content">
-                        <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
-                        <ul class="stars-list list-unstyled">
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                        </ul>
-                        <div class="price-progress">
-                            <div class="price-box">
-                                <span class="first-price">500 RS</span>
-                                <span class="last-price">700 RS</span>
+                <div id="best-tab-two" role="tabpanel" class="tab-pane">
+                    <div class="owl-carousel owl-theme wow animate__zoomIn" data-wow-duration="0.3s">
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/1.png"></a>
                             </div>
-                            <div class="progress-box">
-                                <div class="my-progress">
-                                    <span class="my-progress-bar"></span>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
                                 </div>
-                                <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
-                    <div class="deal-img-box">
-                        <a href="#!"><img class="deal-img" src="images/photography-slider/3.png"></a>
-                    </div>
-                    <div class="deal-content">
-                        <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
-                        <ul class="stars-list list-unstyled">
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                        </ul>
-                        <div class="price-progress">
-                            <div class="price-box">
-                                <span class="first-price">500 RS</span>
-                                <span class="last-price">700 RS</span>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/2.png"></a>
                             </div>
-                            <div class="progress-box">
-                                <div class="my-progress">
-                                    <span class="my-progress-bar"></span>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
                                 </div>
-                                <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
-                    <div class="deal-img-box">
-                        <a href="#!"><img class="deal-img" src="images/photography-slider/4.png"></a>
-                    </div>
-                    <div class="deal-content">
-                        <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
-                        <ul class="stars-list list-unstyled">
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                        </ul>
-                        <div class="price-progress">
-                            <div class="price-box">
-                                <span class="first-price">500 RS</span>
-                                <span class="last-price">700 RS</span>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/3.png"></a>
                             </div>
-                            <div class="progress-box">
-                                <div class="my-progress">
-                                    <span class="my-progress-bar"></span>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
                                 </div>
-                                <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="deal">
-                    <div class="deal-img-box">
-                        <a href="#!"><img class="deal-img" src="images/photography/1.png"></a>
-                    </div>
-                    <div class="deal-content">
-                        <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
-                        <ul class="stars-list list-unstyled">
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                            <li class="stars-li"><i class="fa fa-star"></i></li>
-                        </ul>
-                        <div class="price-progress">
-                            <div class="price-box">
-                                <span class="first-price">500 RS</span>
-                                <span class="last-price">700 RS</span>
+                        <div class="deal wow animate__zoomIn" data-wow-duration="0.3s">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography-slider/4.png"></a>
                             </div>
-                            <div class="progress-box">
-                                <div class="my-progress">
-                                    <span class="my-progress-bar"></span>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
                                 </div>
-                                <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                            </div>
+                        </div>
+                        <div class="deal">
+                            <div class="deal-img-box">
+                                <a href="#!"><img class="deal-img" src="images/photography/1.png"></a>
+                            </div>
+                            <div class="deal-content">
+                                <a class="deal-name" href="#!">Sigma 24-70mm f/2.8 DG HSM Art Lenses (4 options)</a>
+                                <ul class="stars-list list-unstyled">
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                    <li class="stars-li"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="price-progress">
+                                    <div class="price-box">
+                                        <span class="first-price">500 RS</span>
+                                        <span class="last-price">700 RS</span>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="my-progress">
+                                            <span class="my-progress-bar"></span>
+                                        </div>
+                                        <p class="deals-time">Deals end in <span class="green">5:12:10</span></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1120,12 +1355,12 @@
     <div class="loading-overlay">
         <div class="loading-overlay-box">
             <img src="images/logo/logo.png">
-            <!-- <div class="lds-ellipsis">
+            <div class="lds-ellipsis">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
-            </div> -->
+            </div>
         </div>
     </div>
 
