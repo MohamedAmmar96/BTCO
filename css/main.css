@@ -378,6 +378,11 @@
         opacity: 0;
     }
     
+    html[dir=rtl] .config-box {
+        left: auto;
+        right: 0;
+    }
+    
     .form {
         padding: 25px 30px;
         display: flex;
@@ -469,6 +474,10 @@
         align-items: center;
         width: 100%;
         margin-bottom: 0;
+    }
+    
+    .account-li {
+        width: 33.33%;
     }
     
     .account-li .account-link {
@@ -589,7 +598,7 @@
     
     html[dir=rtl] .mega-menu {
         left: auto;
-        right: -115px;
+        right: -90px;
     }
     
     .mega-menu::before {
@@ -604,7 +613,7 @@
     
     html[dir=rtl] .mega-menu::before {
         left: auto;
-        right: 130px;
+        right: 105px;
     }
     
     .mega-list {
