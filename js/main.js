@@ -120,7 +120,10 @@ $(document).ready(function() {
             }
         }
     });
-
+    $(".mo-tabs a").on("shown.bs.tab", function(e) {
+        let $owl = $(".photography .owl-carousel");
+        $owl.trigger('refresh.owl.carousel');
+    });
 
     $('.brands .owl-carousel').owlCarousel({
         loop: true,
