@@ -1537,10 +1537,85 @@
     
     .contact {
         display: flex;
-        flex-direction: row;
+        /*new*/
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 65px;
+        /*new*/
+        direction: ltr;
+    }
+    /*new*/
+    
+    html[dir=rtl] .contact {
+        direction: rtl;
+    }
+    
+    .contact-title {
+        color: #939393;
+        font-size: 14px;
+        font-family: "regular";
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .title-capital {
+        text-transform: uppercase;
+    }
+    
+    .contact .contact-phone-big {
+        color: #939393;
+        text-decoration: none;
+        font-size: 29px;
+        line-height: 1;
+        font-family: "bold";
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .contact .contact-phone-small {
+        color: #939393;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "regular";
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .contact .contact-phone-big:hover,
+    .contact .contact-phone-small:hover {
+        color: #216b34;
+    }
+    
+    .contact .contact-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #939393;
+        text-decoration: none;
+    }
+    
+    .contact-link .contact-icon {
+        color: #0867a3;
+        margin-inline-end: 20px;
+        font-size: 36px;
+        transform: rotateY(360deg);
+        transition: all 0.4s ease-in-out;
+    }
+    
+    html[dir=rtl] .contact-link .contact-icon {
+        transform: rotateY(-180deg);
+    }
+    
+    .contact-name {
+        margin-bottom: 0;
+        font-size: 31px;
+        font-family: "regular";
+        color: #939393;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .contact-link:hover .contact-icon,
+    .contact-link:hover .contact-name {
+        color: #216b34;
     }
     /***************************** Features Section Start *************************/
     
